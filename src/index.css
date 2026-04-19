@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-primary: #0f172a;
+  --color-secondary: #64748b;
+  --color-accent: #6366f1;
+  --color-bg: #fafafa;
+  --color-border: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(99, 102, 241, 0.2);
+  color: var(--color-accent);
+}
+
+/* Typing cursor blink */
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #10b981;
+  margin-left: 4px;
+  animation: blink-cursor 1s step-end infinite;
+  vertical-align: middle;
+}
+
+/* Spinning gradient border (Hakkimda karti) */
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spin-slow 2.5s linear infinite; }
+
+/* Float — Hero'daki kucuk dekoratif sekiller */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-12px) rotate(3deg); }
+  66% { transform: translateY(8px) rotate(-2deg); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+/* Pulse-glow — Hero'da tek bir blob */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+.animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+
+/* Hero'daki capraz — mobilde dar ekranda icerigi kapsasin diye dark alan genis
+   tutuldu; desktop'ta klasik corner-to-corner diagonal'a donuyor */
+.clip-hero-dark {
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+.clip-hero-light {
+  clip-path: polygon(100% 70%, 100% 100%, 0 100%);
+}
+.clip-hero-line {
+  clip-path: polygon(0 100%, 100% 70%, 100% calc(70% + 2px), 0 calc(100% + 2px));
+}
+@media (min-width: 1024px) {
+  .clip-hero-dark { clip-path: polygon(0 0, 100% 0, 0 100%); }
+  .clip-hero-light { clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+  .clip-hero-line { clip-path: polygon(0 calc(100% - 1.5px), 100% -1.5px, calc(100% + 3px) 1.5px, 3px calc(100% + 1.5px)); }
+}
+
+/* Erisilebilirlik — reduced motion tercihi */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-float,
+  .animate-pulse-glow,
+  .animate-spin-slow {
+    animation: none !important;
+  }
+  .typing-cursor {
+    animation: none !important;
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
