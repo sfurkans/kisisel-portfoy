@@ -31,14 +31,7 @@ const Projects = () => {
           }}
         />
 
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-[-10%] left-[-10%] w-[80%] h-[40%] bg-gradient-to-r from-transparent via-emerald-500/12 to-transparent blur-[50px]" />
-          <div className="absolute top-[15%] left-[-5%] w-[60%] h-[30%] bg-gradient-to-r from-transparent via-green-400/10 to-transparent blur-[40px]" />
-          <div className="absolute top-[30%] left-[5%] w-[45%] h-[25%] bg-gradient-to-r from-transparent via-teal-400/8 to-transparent blur-[45px]" />
-        </div>
-
-        <div className="absolute top-[10%] left-[8%] w-72 h-72 bg-emerald-600/10 rounded-full blur-[60px]" />
-        <div className="absolute top-[25%] left-[25%] w-56 h-56 bg-green-600/6 rounded-full blur-[45px]" />
+        <div className="absolute top-[10%] left-[8%] w-72 h-72 bg-emerald-600/15 rounded-full blur-[30px]" />
 
         {darkStars.map((s, i) => (
           <div
@@ -52,9 +45,7 @@ const Projects = () => {
       {/* ============ ACIK ALAN (sag-alt ucgen) ============ */}
       <div className="absolute inset-0" style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }}>
         <div className="absolute inset-0 bg-gradient-to-tl from-[#ecfdf5] via-[#f0fdf4] to-[#f0fdf4]" />
-        <div className="absolute bottom-[10%] right-[8%] w-72 h-72 bg-emerald-200/25 rounded-full blur-[50px]" />
-        <div className="absolute bottom-[30%] right-[25%] w-48 h-48 bg-green-200/15 rounded-full blur-[40px]" />
-        <div className="absolute bottom-[15%] right-[40%] w-56 h-56 bg-teal-200/12 rounded-full blur-[45px]" />
+        <div className="absolute bottom-[10%] right-[8%] w-72 h-72 bg-emerald-200/35 rounded-full blur-[30px]" />
       </div>
 
       {/* ============ CAPRAZ CIZGI ============ */}

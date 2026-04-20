@@ -29,14 +29,7 @@ const Skills = () => {
           }}
         />
 
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute bottom-[-10%] left-[-10%] w-[80%] h-[40%] bg-gradient-to-r from-transparent via-emerald-500/12 to-transparent blur-[50px]" />
-          <div className="absolute bottom-[15%] left-[-5%] w-[60%] h-[30%] bg-gradient-to-r from-transparent via-green-400/10 to-transparent blur-[40px]" />
-          <div className="absolute bottom-[35%] left-[5%] w-[45%] h-[25%] bg-gradient-to-r from-transparent via-teal-400/6 to-transparent blur-[45px]" />
-        </div>
-
-        <div className="absolute bottom-[12%] left-[10%] w-72 h-72 bg-emerald-600/10 rounded-full blur-[60px]" />
-        <div className="absolute bottom-[30%] left-[25%] w-56 h-56 bg-green-600/6 rounded-full blur-[45px]" />
+        <div className="absolute bottom-[12%] left-[10%] w-72 h-72 bg-emerald-600/15 rounded-full blur-[30px]" />
 
         {sectionStars.map((s, i) => (
           <div
@@ -50,9 +43,7 @@ const Skills = () => {
       {/* ============ ACIK ALAN (sag-ust ucgen) ============ */}
       <div className="absolute inset-0" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%)' }}>
         <div className="absolute inset-0 bg-gradient-to-bl from-[#ecfdf5] via-[#f0fdf4] to-[#f0fdf4]" />
-        <div className="absolute top-[10%] right-[8%] w-72 h-72 bg-emerald-200/25 rounded-full blur-[50px]" />
-        <div className="absolute top-[30%] right-[25%] w-48 h-48 bg-green-200/15 rounded-full blur-[40px]" />
-        <div className="absolute top-[8%] right-[40%] w-56 h-56 bg-teal-200/12 rounded-full blur-[45px]" />
+        <div className="absolute top-[10%] right-[8%] w-72 h-72 bg-emerald-200/35 rounded-full blur-[30px]" />
       </div>
 
       {/* ============ TERS CAPRAZ CIZGI ============ */}
@@ -118,7 +109,7 @@ const Skills = () => {
                   <motion.div
                     key={skill.name}
                     variants={fadeInUp}
-                    className="group relative rounded-2xl border border-emerald-600/25 bg-emerald-600/10 backdrop-blur-sm overflow-hidden flex items-center gap-3 p-3.5 sm:p-4 transition-all duration-300 hover:border-emerald-600/50 hover:bg-emerald-600/15 hover:-translate-y-0.5"
+                    className="group relative rounded-2xl border border-emerald-600/25 bg-emerald-600/10 overflow-hidden flex items-center gap-3 p-3.5 sm:p-4 transition-all duration-300 hover:border-emerald-600/50 hover:bg-emerald-600/15 hover:-translate-y-0.5"
                   >
                     <span className="relative z-10 text-xl sm:text-2xl transition-transform duration-300 group-hover:scale-110">{skill.icon}</span>
                     <span className="relative z-10 text-sm sm:text-base font-medium text-emerald-900 truncate">
@@ -161,7 +152,7 @@ const Skills = () => {
                       <motion.div
                         key={skill.name}
                         variants={fadeInUp}
-                        className="group relative rounded-2xl border border-white/15 bg-white/[0.12] backdrop-blur-sm overflow-hidden flex items-center gap-3 p-3.5 sm:p-4 transition-all duration-300 hover:border-white/30 hover:bg-white/20 hover:-translate-y-0.5"
+                        className="group relative rounded-2xl border border-white/15 bg-white/[0.12] overflow-hidden flex items-center gap-3 p-3.5 sm:p-4 transition-all duration-300 hover:border-white/30 hover:bg-white/20 hover:-translate-y-0.5"
                       >
                         <span className="relative z-10 text-xl sm:text-2xl transition-transform duration-300 group-hover:scale-110">{skill.icon}</span>
                         <span className="relative z-10 text-sm sm:text-base font-medium text-white/85 truncate">

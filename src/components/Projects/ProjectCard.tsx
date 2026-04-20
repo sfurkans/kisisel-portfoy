@@ -14,10 +14,10 @@ export const ProjectCard = ({
 
   return (
     <div
-      className={`group relative w-full rounded-2xl backdrop-blur-sm p-6 sm:p-8 flex flex-col transition-all duration-300 ${
+      className={`group relative w-full rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 ${
         isDark
-          ? 'border border-emerald-500/30 bg-emerald-800/30 hover:shadow-xl hover:shadow-emerald-500/15 hover:border-emerald-400/50 hover:bg-emerald-800/50'
-          : 'border border-emerald-600/30 bg-emerald-100/50 shadow-sm hover:shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-600/55 hover:bg-emerald-100/75'
+          ? 'border border-emerald-500/30 bg-emerald-800/60 hover:shadow-xl hover:shadow-emerald-500/15 hover:border-emerald-400/50 hover:bg-emerald-800/75'
+          : 'border border-emerald-600/30 bg-emerald-100/85 shadow-sm hover:shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-600/55 hover:bg-emerald-100/95'
       }`}
     >
       {/* Ust satir: etiket + GitHub icon-only */}

@@ -128,15 +128,7 @@ const Hero = () => {
       <div className="absolute inset-0 clip-hero-dark">
         <div className="absolute inset-0 bg-gradient-to-br from-[#021a0a] via-[#061f10] to-[#0a2818]" />
 
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-[-20%] left-[-10%] w-[120%] h-[40%] bg-gradient-to-r from-transparent via-emerald-500/15 to-transparent blur-[40px]" />
-          <div className="absolute top-[10%] left-[-5%] w-[110%] h-[30%] bg-gradient-to-r from-transparent via-green-400/10 to-transparent blur-[50px]" />
-          <div className="absolute top-[30%] left-[10%] w-[100%] h-[25%] bg-gradient-to-r from-transparent via-teal-400/8 to-transparent blur-[45px]" />
-        </div>
-
-        <div className="absolute top-[8%] left-[5%] w-80 h-80 bg-emerald-600/8 rounded-full blur-[60px]" />
-        <div className="absolute top-[25%] left-[30%] w-56 h-56 bg-green-600/6 rounded-full blur-[45px]" />
-        <div className="absolute top-[5%] right-[20%] w-40 h-40 bg-emerald-500/5 rounded-full blur-[40px] animate-pulse-glow" />
+        <div className="absolute top-[5%] right-[20%] w-40 h-40 bg-emerald-500/10 rounded-full blur-[30px] animate-pulse-glow" />
 
         {stars.map((s, i) => (
           <div
@@ -150,9 +142,7 @@ const Hero = () => {
       {/* ============ ACIK ALAN ============ */}
       <div className="absolute inset-0 clip-hero-light">
         <div className="absolute inset-0 bg-gradient-to-tl from-[#ecfdf5] via-[#f0fdf4] to-[#f0fdf4]" />
-        <div className="absolute bottom-[8%] right-[8%] w-72 h-72 bg-emerald-200/20 rounded-full blur-[50px]" />
-        <div className="absolute bottom-[30%] right-[25%] w-48 h-48 bg-green-200/12 rounded-full blur-[40px]" />
-        <div className="absolute bottom-[15%] left-[30%] w-56 h-56 bg-teal-200/10 rounded-full blur-[45px]" />
+        <div className="absolute bottom-[8%] right-[8%] w-72 h-72 bg-emerald-200/30 rounded-full blur-[30px]" />
       </div>
 
       {/* ============ CAPRAZ CIZGI ============ */}
@@ -251,7 +241,7 @@ const Hero = () => {
                 <div className="absolute inset-[-100%] bg-[conic-gradient(from_0deg,transparent_40%,#10b981_50%,#34d399_55%,transparent_65%)] animate-spin-slow" />
               </div>
 
-              <div className="relative rounded-2xl border border-transparent bg-white/65 backdrop-blur-sm p-6 sm:p-8 overflow-hidden shadow-2xl shadow-emerald-400/8">
+              <div className="relative rounded-2xl border border-transparent bg-white/90 p-6 sm:p-8 overflow-hidden shadow-2xl shadow-emerald-400/8">
                 <div className="absolute inset-0 rounded-2xl pointer-events-none bg-gradient-to-br from-emerald-400/[0.04] via-transparent to-green-400/[0.04]" />
                 <div className="absolute top-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-emerald-400/40 to-transparent" />
 
